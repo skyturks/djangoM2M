@@ -1,0 +1,10 @@
+{{ description }}
+
+{% load crispy_forms_tags %}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ libraryCreateForm|crispy }}
+
+        <button type="submit">Record</button>
+    </form>
